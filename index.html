@@ -34,7 +34,7 @@
     <header class="header">
         <a href="index.html" class="logo">
             <img src="images/kings-logo.png" alt="Kings Medic Logo">
-            <span>Kings Medic</span>
+            <!-- <span>Kings Medic</span> -->
         </a>
         <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
             <i class="fa-solid fa-bars"></i>
@@ -45,6 +45,7 @@
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
             <a href="#appointment" class="nav-book">Book Appointment</a>
+            <a href="tel:+2348127978318" class="btn-call"><i class="fa-solid fa-phone"></i> Call Now</a>
         </nav>
         <nav>
             <a href="tel:+2348127978318" class="btn-call"><i class="fa-solid fa-phone"></i> Call Now</a>
@@ -159,16 +160,18 @@
                 <i class="fa-solid fa-shield-heart"></i>
                 <div><strong>NHIA & Oranghis</strong><span>Insurance accepted</span></div>
             </div>
+            <!-- Big white logo mark in the corner (shown on mobile only). Use a transparent logo mark, not the full wordmark. -->
+            <img src="images/kings-logo.png" alt="" class="welcome-mark" aria-hidden="true">
         </div>
 
         <div class="welcome-text">
             <img src="images/kings-logo.png" alt="" class="why-mark" aria-hidden="true">
             <p class="why-eyebrow">Welcome to Kings Medic & Diagnostics</p>
             <h2>Not Just Better Healthcare, But a Better Healthcare Experience.</h2>
-            <p>Your health is our top priority. Our team of experienced doctors provides quality medical care to families across Akure, from the Pool of Bethesda.</p>
+            <blockquote>Your health is our top priority. Our team of experienced doctors provides quality medical care to families across Akure, from the Pool of Bethesda.</blockquote>
             <p>Our mission is to improve the health of our community by providing high-quality, comprehensive care in a welcoming and compassionate environment.</p>
             <p>We believe healing goes beyond prescribing medication. It means listening to our patients, understanding their needs, and walking with them on their journey to recovery.</p>
-            <a href="about.html" class="btn-primary">View More About Us</a>
+            <a href="about.html" class="btn-primary">View More About Us <i class="fa-solid fa-arrow-right"></i></a>
         </div>
     </section>
 
@@ -194,7 +197,7 @@
                 <p class="why-eyebrow">Trusted Source for Health Insights</p>
                 <h2>Why Choose Kings Medic & Diagnostics?</h2>
                 <p class="why-lead">Kings Medic & Diagnostics stands out for its patient-centred, specialist care delivered with compassion and precision, combining a modern laboratory, experienced doctors and NHIA and Oranghis insurance support, all under one roof at Pool of Bethesda, Akure.</p>
-                <a href="about.html" class="btn-primary">More Why Choose Us</a>
+                <a href="about.html" class="btn-primary">More Why Choose Us <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <!-- Add your YouTube video ID in data-video (the part after v=). Leave empty to show the photo only. -->
@@ -375,9 +378,7 @@
     </footer>
 
     <div class="fab-bar">
-        <a href="#appointment" aria-label="Book appointment"><i class="fa-solid fa-calendar-check"></i><span>Book</span></a>
-        <a href="tel:+2348127978318" aria-label="Call us"><i class="fa-solid fa-phone"></i><span>Call</span></a>
-        <a href="https://wa.me/2348127978318?text=Hi%20there!" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="fab-wa"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+        <a href="https://wa.me/2348127978318?text=Hi%20there!" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="fab-wa"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
 
     <script src="js/app.js"></script>
