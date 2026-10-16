@@ -673,14 +673,11 @@ footer {
     }
 }
 
-/* ===== Inner pages: append to the end of css/style.css ===== */
-/* Active nav link */
 .main-nav a.active {
     color: #2A9D8F;
     font-weight: 600;
 }
 
-/* Call button (now in its own <nav>, outside .main-nav) */
 .btn-call {
     background-color: #E63946;
     color: #FFFFFF;
@@ -807,7 +804,6 @@ footer {
     justify-content: center;
 }
 
-/* ===== Split template (Services + Contact): append to css/style.css ===== */
 .split {
     display: grid;
     grid-template-columns: 360px 1fr;
@@ -1006,7 +1002,6 @@ a.info-card:hover {
     }
 }
 
-/* ===== Top bar: append to css/style.css (you can delete the old .emergency-bar rules) ===== */
 .topbar {
     background: #0F4C81;
     color: #FFFFFF;
@@ -1069,7 +1064,6 @@ a.info-card:hover {
     }
 }
 
-/* ===== Full-width hero: append to css/style.css ===== */
 .hero-full {
     position: relative;
     min-height: 78vh;
@@ -1099,7 +1093,6 @@ a.info-card:hover {
     color: rgba(255, 255, 255, 0.9);
 }
 
-/* Parallax only on big screens with a mouse; phones scroll normally */
 @media (min-width: 1025px) and (hover: hover) {
     .hero-full {
         background-attachment: scroll, fixed;
@@ -1127,7 +1120,6 @@ a.info-card:hover {
     transform: translateY(-3px);
 }
 
-/* Info strip overlapping the hero */
 .hero-strip {
     position: relative;
     z-index: 2;
@@ -1181,7 +1173,6 @@ a.info-card:hover {
     }
 }
 
-/* ===== Photo bands: append to css/style.css ===== */
 .photo-band,
 .cta-photo {
     color: #FFFFFF;
@@ -1229,7 +1220,6 @@ a.info-card:hover {
     justify-content: center;
 }
 
-/* Fixed backdrop on big screens only: gradient scrolls, photo stays put */
 @media (min-width: 1025px) and (hover: hover) {
     .photo-band,
     .cta-photo {
@@ -1237,7 +1227,6 @@ a.info-card:hover {
     }
 }
 
-/* ===== Homepage form on a grey section: append to css/style.css ===== */
 .appointment.on-grey {
     background: #F4F7F6;
 }
@@ -1247,8 +1236,6 @@ a.info-card:hover {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-/* ===== Hero photo + page-wide fixed background: append to css/style.css ===== */
-/* Photo inside the hero */
 .hero-full {
     gap: 3rem;
     flex-wrap: wrap;
@@ -1279,8 +1266,6 @@ a.info-card:hover {
     }
 }
 
-/* Page-wide fixed background.
-   A fixed layer (not background-attachment) also works on iPhones. */
 body.has-bg::before {
     content: "";
     position: fixed;
@@ -1307,8 +1292,6 @@ body.has-bg::before {
     background: rgba(244, 247, 246, 0.88);
 }
 
-/* ===== Motion + features: append to css/style.css ===== */
-/* Scroll reveal (classes are added by app.js, so nothing is hidden without JS) */
 .reveal {
     opacity: 0;
     transform: translateY(24px);
@@ -1374,7 +1357,6 @@ body.has-bg::before {
     }
 }
 
-/* Floating action bar (replaces the single WhatsApp bubble) */
 .fab-bar {
     position: fixed;
     right: 20px;
@@ -1424,8 +1406,6 @@ body.has-bg::before {
     }
 }
 
-/* ===== Visible effects ===== */
-/* Hero text builds in on load and on every slide change */
 @keyframes riseIn {
     from {
         opacity: 0;
@@ -1548,7 +1528,6 @@ body.has-bg::before {
     }
 }
 
-/* Stronger reveal, with sideways entrances */
 .reveal {
     transform: translateY(45px);
     transition: opacity 0.8s ease, transform 0.8s cubic-bezier(.2,.7,.2,1);
@@ -1647,8 +1626,6 @@ body.has-bg::before {
     }
 }
 
-/* ===== Why choose us (replica of the reference section layout) =====
-   Intentionally no .reveal classes: those start hidden until app.js adds .visible. */
 .why-choose {
     padding: 5rem 5%;
 }
@@ -1793,7 +1770,6 @@ body.has-bg::before {
     color: #475569;
 }
 
-/* ===== Welcome section (replaces the About teaser on the homepage) ===== */
 .welcome {
     display: flex;
     flex-wrap: wrap;
@@ -1902,8 +1878,6 @@ body.has-bg::before {
         right: 0;
     }
 }
-
-/* ===== Refined photo band + call to action (replace the casual versions) ===== */
 .commit-band {
     position: relative;
     overflow: hidden;
@@ -2264,7 +2238,6 @@ body.has-bg::before {
     margin-bottom: 0.5rem;
 }
 
-/* ===== About page: hero, journey, values, team, partners, FAQ, insights ===== */
 .about-hero {
     position: relative;
     color: #FFFFFF;
@@ -2610,8 +2583,6 @@ body.has-bg::before {
     }
 }
 
-/* ===== Mobile refinements ===== */
-/* Desktop: only the standalone Call Now button shows; the one inside the menu is for phones */
 .main-nav .btn-call {
     display: none;
 }
@@ -2656,7 +2627,6 @@ body.has-bg::before {
 }
 
 @media (max-width: 560px) {
-    /* Top bar: emergency on the left, social icons on the right, no overflow */
     .topbar {
         padding-left: 5%;
         padding-right: 5%;
@@ -2747,7 +2717,6 @@ body.has-bg::before {
 }
 
 @media (max-width: 480px) {
-    /* Full-width, easy-to-tap buttons */
     .hero-buttons a {
         flex: 1 1 100%;
     }
@@ -2757,7 +2726,6 @@ body.has-bg::before {
     }
 }
 
-/* ===== Mobile: match reference design (Welcome + Why Choose Us) ===== */
 :root {
     --navy-deep: #03073d;
     --mint: #2de0b9;
@@ -2896,7 +2864,6 @@ body.has-bg::before {
         margin-left: 0.5rem;
     }
 
-    /* Why choose: logo mark sits beside the eyebrow */
     .why-text {
         display: grid;
         grid-template-columns: auto 1fr;
@@ -2919,7 +2886,6 @@ body.has-bg::before {
         justify-self: start;
     }
 
-    /* Video */
     .why-video {
         aspect-ratio: 1 / 1.04;
         border-radius: 28px;
@@ -2939,7 +2905,6 @@ body.has-bg::before {
         font-size: 2rem;
     }
 
-    /* Features: icon left, text right, no cards */
     .why-features {
         grid-template-columns: 1fr;
         gap: 2.2rem;
@@ -2986,7 +2951,6 @@ body.has-bg::before {
     }
 }
 
-/* Phones: keep the welcome padding rule from the 560px block from overriding the new spacing */
 @media (max-width: 560px) {
     .welcome,
     .why-choose {
